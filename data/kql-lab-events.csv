@@ -1,0 +1,368 @@
+TimeGenerated,EventSource,EventID,Computer,User,TargetUserName,TargetDomainName,SubjectUserName,LogonType,SourceIp,Status,SubStatus,ProcessGuid,ProcessId,Image,CommandLine,ParentImage,DestinationIp,DestinationPort,Protocol,Initiated,LabEventId,IsSynthetic
+2026-09-24T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{75292453-3517-4265-80d4-9ea7c1d9318c},2012,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000001,true
+2026-09-24T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{cb0d6c3f-7ab3-43d3-8d58-ae7d872b118e},2000,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000002,true
+2026-09-24T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{55d22c2e-640c-4680-8784-0bf1c6d47b47},2006,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000003,true
+2026-09-24T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{75292453-3517-4265-80d4-9ea7c1d9318c},2012,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000004,true
+2026-09-24T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{cb0d6c3f-7ab3-43d3-8d58-ae7d872b118e},2000,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000005,true
+2026-09-24T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{55d22c2e-640c-4680-8784-0bf1c6d47b47},2006,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000006,true
+2026-09-24T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{75292453-3517-4265-80d4-9ea7c1d9318c},2012,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000007,true
+2026-09-24T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{cb0d6c3f-7ab3-43d3-8d58-ae7d872b118e},2000,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000008,true
+2026-09-24T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{55d22c2e-640c-4680-8784-0bf1c6d47b47},2006,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000009,true
+2026-09-24T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000010,true
+2026-09-24T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000011,true
+2026-09-24T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000012,true
+2026-09-24T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000013,true
+2026-09-24T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000014,true
+2026-09-24T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000015,true
+2026-09-24T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{99dcb5ac-8576-4c30-88da-96dcc9da15a2},2013,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000016,true
+2026-09-24T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{a47b4f14-5bd5-4526-8adb-fcae5f3afd37},2001,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000017,true
+2026-09-24T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{55917d0a-3588-443a-8b04-2eaf86ee3154},2007,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000018,true
+2026-09-24T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{86bf2c23-286d-4730-8efb-cdce941b5761},2014,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000019,true
+2026-09-24T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{961dbacd-dec3-4247-8947-66e81c0aec10},2002,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000020,true
+2026-09-24T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{701d7cdc-a991-447d-8d0f-a11b9a2bc568},2008,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000021,true
+2026-09-24T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{86bf2c23-286d-4730-8efb-cdce941b5761},2014,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000022,true
+2026-09-24T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{961dbacd-dec3-4247-8947-66e81c0aec10},2002,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000023,true
+2026-09-24T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{701d7cdc-a991-447d-8d0f-a11b9a2bc568},2008,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000024,true
+2026-09-24T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{86bf2c23-286d-4730-8efb-cdce941b5761},2014,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000025,true
+2026-09-24T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{961dbacd-dec3-4247-8947-66e81c0aec10},2002,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000026,true
+2026-09-24T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{701d7cdc-a991-447d-8d0f-a11b9a2bc568},2008,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000027,true
+2026-09-24T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{86bf2c23-286d-4730-8efb-cdce941b5761},2014,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000028,true
+2026-09-24T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{961dbacd-dec3-4247-8947-66e81c0aec10},2002,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000029,true
+2026-09-24T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{701d7cdc-a991-447d-8d0f-a11b9a2bc568},2008,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000030,true
+2026-09-24T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{72628eea-eb51-43d3-8741-162f05a09847},2015,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000031,true
+2026-09-24T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{b62af2f6-0584-4924-8104-0fb0b8c37acd},2003,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000032,true
+2026-09-24T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{0b9ac88d-0b59-4a80-8bb7-0e946223393e},2009,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000033,true
+2026-09-24T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000034,true
+2026-09-24T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000035,true
+2026-09-24T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000036,true
+2026-09-24T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{e3bc9816-6143-4b9a-8329-9970b2821070},2016,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000037,true
+2026-09-24T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{105560f3-94a5-4843-88ba-78a0fd15f8e3},2004,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000038,true
+2026-09-24T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{c98aba2e-f173-46c5-8355-cb86eae937ef},2010,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000039,true
+2026-09-24T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000040,true
+2026-09-24T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000041,true
+2026-09-24T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000042,true
+2026-09-24T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{a80c09b1-af0b-4687-8d8b-5a00ba8e9f0b},2017,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000043,true
+2026-09-24T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{2181cf6d-5f2c-4b68-81ea-c28200a02523},2005,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000044,true
+2026-09-24T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{2d01d0ef-1d36-497a-87d1-7f8f42705df6},2011,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000045,true
+2026-09-24T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{75292453-3517-4265-80d4-9ea7c1d9318c},2012,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000046,true
+2026-09-24T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{cb0d6c3f-7ab3-43d3-8d58-ae7d872b118e},2000,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000047,true
+2026-09-24T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{55d22c2e-640c-4680-8784-0bf1c6d47b47},2006,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000048,true
+2026-09-25T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{df7ec4b0-97bb-4bde-821d-71b60726938f},2030,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000049,true
+2026-09-25T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{1a938398-539e-429f-8730-876f3fe08425},2018,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000050,true
+2026-09-25T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{c5ffb3cc-dd5e-47f9-8bdc-7c41fce609b3},2024,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000051,true
+2026-09-25T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{df7ec4b0-97bb-4bde-821d-71b60726938f},2030,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000052,true
+2026-09-25T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{1a938398-539e-429f-8730-876f3fe08425},2018,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000053,true
+2026-09-25T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{c5ffb3cc-dd5e-47f9-8bdc-7c41fce609b3},2024,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000054,true
+2026-09-25T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{df7ec4b0-97bb-4bde-821d-71b60726938f},2030,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000055,true
+2026-09-25T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{1a938398-539e-429f-8730-876f3fe08425},2018,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000056,true
+2026-09-25T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{c5ffb3cc-dd5e-47f9-8bdc-7c41fce609b3},2024,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000057,true
+2026-09-25T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000058,true
+2026-09-25T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000059,true
+2026-09-25T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000060,true
+2026-09-25T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000061,true
+2026-09-25T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000062,true
+2026-09-25T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000063,true
+2026-09-25T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{d263b877-ac3c-4e02-8a6b-251db29c93f4},2031,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000064,true
+2026-09-25T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{ea0d8ac1-d45a-4439-89ad-f254358caa26},2019,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000065,true
+2026-09-25T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{1c128264-7f7b-46e2-866d-3ce7c7a3b5cc},2025,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000066,true
+2026-09-25T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{220e4c66-1abf-46c8-8a9d-3ce0c0710001},2032,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000067,true
+2026-09-25T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{71d41c79-7f00-4e00-8251-669a55db115b},2020,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000068,true
+2026-09-25T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{1a88f735-9d95-48f5-8b63-67ef66d1230a},2026,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000069,true
+2026-09-25T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{220e4c66-1abf-46c8-8a9d-3ce0c0710001},2032,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000070,true
+2026-09-25T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{71d41c79-7f00-4e00-8251-669a55db115b},2020,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000071,true
+2026-09-25T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{1a88f735-9d95-48f5-8b63-67ef66d1230a},2026,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000072,true
+2026-09-25T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{220e4c66-1abf-46c8-8a9d-3ce0c0710001},2032,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000073,true
+2026-09-25T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{71d41c79-7f00-4e00-8251-669a55db115b},2020,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000074,true
+2026-09-25T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{1a88f735-9d95-48f5-8b63-67ef66d1230a},2026,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000075,true
+2026-09-25T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{220e4c66-1abf-46c8-8a9d-3ce0c0710001},2032,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000076,true
+2026-09-25T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{71d41c79-7f00-4e00-8251-669a55db115b},2020,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000077,true
+2026-09-25T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{1a88f735-9d95-48f5-8b63-67ef66d1230a},2026,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000078,true
+2026-09-25T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{f6cd4a52-6c56-4789-8c63-ae4c58cb6a6a},2033,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000079,true
+2026-09-25T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{2fc0baea-0eff-4649-89e8-77bcc029e2f8},2021,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000080,true
+2026-09-25T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{e8bd0b4b-bcc8-425f-8dbd-df06c7bd9122},2027,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000081,true
+2026-09-25T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000082,true
+2026-09-25T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000083,true
+2026-09-25T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000084,true
+2026-09-25T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{ddca8158-d9f6-4b94-8529-5a4269a41eb2},2034,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000085,true
+2026-09-25T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{26ecbd03-0958-4317-8a1b-790b094e04c9},2022,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000086,true
+2026-09-25T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{f80ee733-514e-436d-8def-4ec283c7105d},2028,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000087,true
+2026-09-25T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000088,true
+2026-09-25T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000089,true
+2026-09-25T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000090,true
+2026-09-25T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{8846b258-c936-4f59-8534-72561dce4cc5},2035,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000091,true
+2026-09-25T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{90d24dd3-3290-45d7-8929-0f145653e32c},2023,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000092,true
+2026-09-25T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{76a648d8-bc26-4f97-8cee-6bd26bd21aa9},2029,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000093,true
+2026-09-25T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{df7ec4b0-97bb-4bde-821d-71b60726938f},2030,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000094,true
+2026-09-25T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{1a938398-539e-429f-8730-876f3fe08425},2018,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000095,true
+2026-09-25T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{c5ffb3cc-dd5e-47f9-8bdc-7c41fce609b3},2024,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000096,true
+2026-09-26T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{07330d46-d51b-456f-8be1-38c7bb30d34e},2048,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000097,true
+2026-09-26T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{ec535283-bff0-4fca-85ae-0282e34d044b},2036,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000098,true
+2026-09-26T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{14a6c435-9d5c-4bdf-8eb4-bd35899fa06f},2042,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000099,true
+2026-09-26T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07330d46-d51b-456f-8be1-38c7bb30d34e},2048,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000100,true
+2026-09-26T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{ec535283-bff0-4fca-85ae-0282e34d044b},2036,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000101,true
+2026-09-26T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{14a6c435-9d5c-4bdf-8eb4-bd35899fa06f},2042,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000102,true
+2026-09-26T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07330d46-d51b-456f-8be1-38c7bb30d34e},2048,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000103,true
+2026-09-26T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{ec535283-bff0-4fca-85ae-0282e34d044b},2036,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000104,true
+2026-09-26T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{14a6c435-9d5c-4bdf-8eb4-bd35899fa06f},2042,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000105,true
+2026-09-26T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000106,true
+2026-09-26T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000107,true
+2026-09-26T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000108,true
+2026-09-26T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000109,true
+2026-09-26T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000110,true
+2026-09-26T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000111,true
+2026-09-26T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{3dc4b686-1ad7-433c-8b43-89c171973a8c},2049,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000112,true
+2026-09-26T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{2d927002-cad0-4237-8291-abf1a2cd585b},2037,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000113,true
+2026-09-26T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{450e688e-c168-441a-8fe6-acea42ebc955},2043,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000114,true
+2026-09-26T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{37426a09-36b4-434b-8ab5-78f69244849c},2050,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000115,true
+2026-09-26T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{3778ca10-18bf-4521-87d8-802a20c713ff},2038,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000116,true
+2026-09-26T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{351108d5-334d-48fd-8d69-1e73dc4430da},2044,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000117,true
+2026-09-26T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{37426a09-36b4-434b-8ab5-78f69244849c},2050,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000118,true
+2026-09-26T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{3778ca10-18bf-4521-87d8-802a20c713ff},2038,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000119,true
+2026-09-26T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{351108d5-334d-48fd-8d69-1e73dc4430da},2044,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000120,true
+2026-09-26T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{37426a09-36b4-434b-8ab5-78f69244849c},2050,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000121,true
+2026-09-26T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{3778ca10-18bf-4521-87d8-802a20c713ff},2038,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000122,true
+2026-09-26T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{351108d5-334d-48fd-8d69-1e73dc4430da},2044,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000123,true
+2026-09-26T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{37426a09-36b4-434b-8ab5-78f69244849c},2050,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000124,true
+2026-09-26T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{3778ca10-18bf-4521-87d8-802a20c713ff},2038,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000125,true
+2026-09-26T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{351108d5-334d-48fd-8d69-1e73dc4430da},2044,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000126,true
+2026-09-26T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{7759aee8-ee28-4d51-8b61-885f2d83a94a},2051,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000127,true
+2026-09-26T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{7f89c0ac-27b5-4883-89a1-c34a4c2c7b57},2039,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000128,true
+2026-09-26T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{8658d0f9-8f8f-46b2-8551-4b66d902ccee},2045,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000129,true
+2026-09-26T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000130,true
+2026-09-26T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000131,true
+2026-09-26T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000132,true
+2026-09-26T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{e96e320e-7892-4bef-8575-5d99566d10a4},2052,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000133,true
+2026-09-26T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{4cab9fae-afde-4ce6-805c-c0f53fb5bdf7},2040,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000134,true
+2026-09-26T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{224601d4-e4c4-47f0-8e9d-d9330eb7e29e},2046,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000135,true
+2026-09-26T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000136,true
+2026-09-26T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000137,true
+2026-09-26T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000138,true
+2026-09-26T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{67bb5d93-99e3-401f-8ee0-05827f2a36ce},2053,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000139,true
+2026-09-26T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{5adee631-fa8b-44b0-808f-f0a1736cae64},2041,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000140,true
+2026-09-26T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{0ff6cef8-9ad8-4453-8935-0da0a9ecb6dd},2047,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000141,true
+2026-09-26T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07330d46-d51b-456f-8be1-38c7bb30d34e},2048,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000142,true
+2026-09-26T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{ec535283-bff0-4fca-85ae-0282e34d044b},2036,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000143,true
+2026-09-26T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{14a6c435-9d5c-4bdf-8eb4-bd35899fa06f},2042,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000144,true
+2026-09-27T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{53ce34e7-5710-4ffe-8451-8ccdb5e283f3},2066,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000145,true
+2026-09-27T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{fcc529b5-817e-4015-809e-3d1ef6990d13},2054,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000146,true
+2026-09-27T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{88c6abcb-6a37-487c-86b3-5c700c256969},2060,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000147,true
+2026-09-27T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{53ce34e7-5710-4ffe-8451-8ccdb5e283f3},2066,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000148,true
+2026-09-27T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{fcc529b5-817e-4015-809e-3d1ef6990d13},2054,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000149,true
+2026-09-27T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{88c6abcb-6a37-487c-86b3-5c700c256969},2060,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000150,true
+2026-09-27T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{53ce34e7-5710-4ffe-8451-8ccdb5e283f3},2066,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000151,true
+2026-09-27T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{fcc529b5-817e-4015-809e-3d1ef6990d13},2054,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000152,true
+2026-09-27T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{88c6abcb-6a37-487c-86b3-5c700c256969},2060,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000153,true
+2026-09-27T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000154,true
+2026-09-27T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000155,true
+2026-09-27T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000156,true
+2026-09-27T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000157,true
+2026-09-27T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000158,true
+2026-09-27T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000159,true
+2026-09-27T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{595d2fab-ba42-4d1f-8d89-79603bf5df2f},2067,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000160,true
+2026-09-27T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{0540649d-6f60-419d-806d-eb36422dd52a},2055,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000161,true
+2026-09-27T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{9569c228-ac2e-4e35-86e9-0c35ebfc8f95},2061,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000162,true
+2026-09-27T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{3a2bb20b-24c0-4fb1-8197-e338d1012a85},2068,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000163,true
+2026-09-27T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{b67c0562-3289-413a-82aa-d81240e8e8ed},2056,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000164,true
+2026-09-27T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{fa9108eb-ae3b-4082-8d39-a1df1b730913},2062,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000165,true
+2026-09-27T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{3a2bb20b-24c0-4fb1-8197-e338d1012a85},2068,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000166,true
+2026-09-27T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b67c0562-3289-413a-82aa-d81240e8e8ed},2056,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000167,true
+2026-09-27T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{fa9108eb-ae3b-4082-8d39-a1df1b730913},2062,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000168,true
+2026-09-27T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{3a2bb20b-24c0-4fb1-8197-e338d1012a85},2068,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000169,true
+2026-09-27T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b67c0562-3289-413a-82aa-d81240e8e8ed},2056,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000170,true
+2026-09-27T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{fa9108eb-ae3b-4082-8d39-a1df1b730913},2062,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000171,true
+2026-09-27T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{3a2bb20b-24c0-4fb1-8197-e338d1012a85},2068,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000172,true
+2026-09-27T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b67c0562-3289-413a-82aa-d81240e8e8ed},2056,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000173,true
+2026-09-27T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{fa9108eb-ae3b-4082-8d39-a1df1b730913},2062,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000174,true
+2026-09-27T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{1bc73cfb-5a83-4cee-86cd-106965bd5844},2069,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000175,true
+2026-09-27T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{18ffd2bf-f454-42ed-86d2-e267e169a835},2057,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000176,true
+2026-09-27T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{214e9518-4173-4bc7-8e68-f9cb48ddb3de},2063,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000177,true
+2026-09-27T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000178,true
+2026-09-27T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000179,true
+2026-09-27T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000180,true
+2026-09-27T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{7d17bb54-b08b-42f1-813e-9bb48252e09c},2070,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000181,true
+2026-09-27T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{3dda7634-7cc8-4bfc-8ab6-40fa62bee7a6},2058,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000182,true
+2026-09-27T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{05c72a83-3a42-49c4-8ddc-bd1e86f6d8ec},2064,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000183,true
+2026-09-27T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000184,true
+2026-09-27T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000185,true
+2026-09-27T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000186,true
+2026-09-27T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{dc34313a-3a5c-45f3-8a02-3b680e0da600},2071,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000187,true
+2026-09-27T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{579b2067-dd59-493a-811b-4d1332dd1b22},2059,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000188,true
+2026-09-27T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{a5d42e85-c5cb-453e-8c57-1bfaa5901200},2065,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000189,true
+2026-09-27T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{53ce34e7-5710-4ffe-8451-8ccdb5e283f3},2066,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000190,true
+2026-09-27T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{fcc529b5-817e-4015-809e-3d1ef6990d13},2054,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000191,true
+2026-09-27T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{88c6abcb-6a37-487c-86b3-5c700c256969},2060,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000192,true
+2026-09-28T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{07173a43-db83-44bb-856b-ea93e1d2d306},2084,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000193,true
+2026-09-28T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{64b52f44-2fbc-4208-84ff-4ffbf94710fb},2072,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000194,true
+2026-09-28T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{e6a7168e-8e37-4b85-88e9-4b3dbabcebf3},2078,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000195,true
+2026-09-28T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07173a43-db83-44bb-856b-ea93e1d2d306},2084,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000196,true
+2026-09-28T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{64b52f44-2fbc-4208-84ff-4ffbf94710fb},2072,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000197,true
+2026-09-28T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{e6a7168e-8e37-4b85-88e9-4b3dbabcebf3},2078,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000198,true
+2026-09-28T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07173a43-db83-44bb-856b-ea93e1d2d306},2084,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000199,true
+2026-09-28T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{64b52f44-2fbc-4208-84ff-4ffbf94710fb},2072,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000200,true
+2026-09-28T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{e6a7168e-8e37-4b85-88e9-4b3dbabcebf3},2078,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000201,true
+2026-09-28T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000202,true
+2026-09-28T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000203,true
+2026-09-28T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000204,true
+2026-09-28T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000205,true
+2026-09-28T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000206,true
+2026-09-28T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000207,true
+2026-09-28T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{234d631d-68c8-4f06-8855-5701de139173},2085,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000208,true
+2026-09-28T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{ad85c625-8e27-4b28-81f3-49f2b2885b75},2073,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000209,true
+2026-09-28T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{5cbde788-394d-4221-851b-7fbe179f2ea1},2079,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000210,true
+2026-09-28T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{5c9e9c1f-1250-4bbe-8b83-9100264bb0d8},2086,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000211,true
+2026-09-28T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{99f6ee62-6c04-438d-849e-59f7912078df},2074,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000212,true
+2026-09-28T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{4e59d1a0-696c-40b4-8915-6905254fff56},2080,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000213,true
+2026-09-28T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{5c9e9c1f-1250-4bbe-8b83-9100264bb0d8},2086,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000214,true
+2026-09-28T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{99f6ee62-6c04-438d-849e-59f7912078df},2074,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000215,true
+2026-09-28T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{4e59d1a0-696c-40b4-8915-6905254fff56},2080,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000216,true
+2026-09-28T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{5c9e9c1f-1250-4bbe-8b83-9100264bb0d8},2086,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000217,true
+2026-09-28T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{99f6ee62-6c04-438d-849e-59f7912078df},2074,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000218,true
+2026-09-28T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{4e59d1a0-696c-40b4-8915-6905254fff56},2080,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000219,true
+2026-09-28T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{5c9e9c1f-1250-4bbe-8b83-9100264bb0d8},2086,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000220,true
+2026-09-28T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{99f6ee62-6c04-438d-849e-59f7912078df},2074,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000221,true
+2026-09-28T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{4e59d1a0-696c-40b4-8915-6905254fff56},2080,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000222,true
+2026-09-28T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{3680134d-27d5-4c7c-8c8b-2362d0fec5b8},2087,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000223,true
+2026-09-28T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{90bbfae5-0003-43d1-8159-32f985414c2e},2075,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000224,true
+2026-09-28T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{9bb34980-4bf5-4480-8669-f6db329a851d},2081,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000225,true
+2026-09-28T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000226,true
+2026-09-28T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000227,true
+2026-09-28T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000228,true
+2026-09-28T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{c1ba625f-7358-4289-8f7f-bd15f501cdd6},2088,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000229,true
+2026-09-28T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{9d3eba25-d8b2-4273-89dd-75244f1abf7b},2076,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000230,true
+2026-09-28T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{57727373-68f4-4717-8f87-b8f64a7ce61d},2082,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000231,true
+2026-09-28T11:30:00Z,WindowsSecurity,4720,WIN11-02,,testuser,WIN11-02,labadmin,,,,,,,,,,,,,,LAB-000232,true
+2026-09-28T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000233,true
+2026-09-28T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000234,true
+2026-09-28T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000235,true
+2026-09-28T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{c65bf368-f34e-421c-8b74-42f15f963768},2089,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000236,true
+2026-09-28T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{f86faf81-799d-4862-87ff-204b19e1d82f},2077,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000237,true
+2026-09-28T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{42a148b7-31ac-448a-834d-85cba8e0fbb8},2083,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000238,true
+2026-09-28T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{07173a43-db83-44bb-856b-ea93e1d2d306},2084,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000239,true
+2026-09-28T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{64b52f44-2fbc-4208-84ff-4ffbf94710fb},2072,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000240,true
+2026-09-28T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{e6a7168e-8e37-4b85-88e9-4b3dbabcebf3},2078,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000241,true
+2026-09-29T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{1c28a98e-a115-40e4-870e-6b0bef1cdf6e},2102,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000242,true
+2026-09-29T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{9e96dfb0-e295-4e2c-8f19-a5b9c5ffc946},2090,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000243,true
+2026-09-29T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{9cfdbd19-6ba6-49b3-808b-a58d79c0ca48},2096,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000244,true
+2026-09-29T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{1c28a98e-a115-40e4-870e-6b0bef1cdf6e},2102,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000245,true
+2026-09-29T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{9e96dfb0-e295-4e2c-8f19-a5b9c5ffc946},2090,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000246,true
+2026-09-29T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{9cfdbd19-6ba6-49b3-808b-a58d79c0ca48},2096,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000247,true
+2026-09-29T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{1c28a98e-a115-40e4-870e-6b0bef1cdf6e},2102,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000248,true
+2026-09-29T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{9e96dfb0-e295-4e2c-8f19-a5b9c5ffc946},2090,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000249,true
+2026-09-29T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{9cfdbd19-6ba6-49b3-808b-a58d79c0ca48},2096,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000250,true
+2026-09-29T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000251,true
+2026-09-29T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000252,true
+2026-09-29T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000253,true
+2026-09-29T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000254,true
+2026-09-29T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000255,true
+2026-09-29T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000256,true
+2026-09-29T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{c9060d04-dd3f-46cd-8fef-a7725acea916},2103,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000257,true
+2026-09-29T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{cfd70224-b40f-4f71-8840-f8d212217d0f},2091,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000258,true
+2026-09-29T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{601695fc-2ee7-4013-85d2-09c41db71e36},2097,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000259,true
+2026-09-29T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{f189e2a7-23ed-4239-86c8-238d45f2011e},2104,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000260,true
+2026-09-29T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{2ada464b-87a1-4100-8199-a1171f84391a},2092,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000261,true
+2026-09-29T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{89b918d3-d877-4b8e-8f59-81940df14b5b},2098,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000262,true
+2026-09-29T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{f189e2a7-23ed-4239-86c8-238d45f2011e},2104,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000263,true
+2026-09-29T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{2ada464b-87a1-4100-8199-a1171f84391a},2092,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000264,true
+2026-09-29T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{89b918d3-d877-4b8e-8f59-81940df14b5b},2098,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000265,true
+2026-09-29T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{f189e2a7-23ed-4239-86c8-238d45f2011e},2104,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000266,true
+2026-09-29T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{2ada464b-87a1-4100-8199-a1171f84391a},2092,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000267,true
+2026-09-29T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{89b918d3-d877-4b8e-8f59-81940df14b5b},2098,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000268,true
+2026-09-29T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{f189e2a7-23ed-4239-86c8-238d45f2011e},2104,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000269,true
+2026-09-29T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{2ada464b-87a1-4100-8199-a1171f84391a},2092,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000270,true
+2026-09-29T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{89b918d3-d877-4b8e-8f59-81940df14b5b},2098,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000271,true
+2026-09-29T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{12f1a480-44cf-43d6-84da-2564e6fcfd67},2105,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000272,true
+2026-09-29T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{92c177cc-94b3-4b26-85c2-2ed5b6e6989f},2093,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000273,true
+2026-09-29T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{cb1361f5-a4a8-469f-8048-57fbd700e980},2099,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000274,true
+2026-09-29T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000275,true
+2026-09-29T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000276,true
+2026-09-29T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000277,true
+2026-09-29T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{90f0672e-84bc-4604-8794-f482ed8f9cbe},2106,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000278,true
+2026-09-29T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{e7e2820f-80e7-4bc7-8099-46e2423d3f50},2094,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000279,true
+2026-09-29T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{785f8b84-016c-4427-8eb1-05d7acc8cc2a},2100,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000280,true
+2026-09-29T12:00:00Z,WindowsSecurity,4720,DC-01,,newhire,LAB,helpdesk,,,,,,,,,,,,,,LAB-000281,true
+2026-09-29T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000282,true
+2026-09-29T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000283,true
+2026-09-29T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000284,true
+2026-09-29T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{fb73aab5-d5fc-48fa-8026-a104d5389ee9},2107,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000285,true
+2026-09-29T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{39e65830-a51a-4df3-828e-e404f2f866d6},2095,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000286,true
+2026-09-29T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{df586992-dd70-40de-8f17-4903ac0ffd29},2101,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000287,true
+2026-09-29T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{1c28a98e-a115-40e4-870e-6b0bef1cdf6e},2102,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000288,true
+2026-09-29T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{9e96dfb0-e295-4e2c-8f19-a5b9c5ffc946},2090,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000289,true
+2026-09-29T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{9cfdbd19-6ba6-49b3-808b-a58d79c0ca48},2096,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000290,true
+2026-09-29T16:10:00Z,Sysmon,1,WIN11-02,WIN11-02\labadmin,,,,,,,,{43a133d9-45f5-43e3-8850-0f0a30ef389e},2129,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe -NoProfile -eNc VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAnAEEAcABwAHIAbwB2AGUAZAAgAG0AYQBpAG4AdABlAG4AYQBuAGMAZQAgAGMAaABlAGMAawAnAA==,C:\Windows\explorer.exe,,,,,LAB-000291,true
+2026-09-30T07:00:00Z,Sysmon,1,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,,,,{f1f9040b-b73a-405f-8652-e07ab09357cf},2120,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000292,true
+2026-09-30T07:00:00Z,Sysmon,1,WIN11-01,NT AUTHORITY\SYSTEM,,,,,,,,{520950be-4755-48e2-86c0-70ab5195dfed},2108,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000293,true
+2026-09-30T07:00:00Z,Sysmon,1,WIN11-02,NT AUTHORITY\SYSTEM,,,,,,,,{4dc1b6df-2caf-4c67-80e7-271844fccbea},2114,C:\Windows\System32\svchost.exe,svchost.exe -k netsvcs,C:\Windows\System32\services.exe,,,,,LAB-000294,true
+2026-09-30T07:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{f1f9040b-b73a-405f-8652-e07ab09357cf},2120,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000295,true
+2026-09-30T07:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{520950be-4755-48e2-86c0-70ab5195dfed},2108,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000296,true
+2026-09-30T07:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{4dc1b6df-2caf-4c67-80e7-271844fccbea},2114,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000297,true
+2026-09-30T07:02:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{f1f9040b-b73a-405f-8652-e07ab09357cf},2120,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000298,true
+2026-09-30T07:02:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{520950be-4755-48e2-86c0-70ab5195dfed},2108,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000299,true
+2026-09-30T07:02:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{4dc1b6df-2caf-4c67-80e7-271844fccbea},2114,C:\Windows\System32\svchost.exe,,,10.0.0.53,53,udp,true,LAB-000300,true
+2026-09-30T07:39:30Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000301,true
+2026-09-30T07:39:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000302,true
+2026-09-30T07:39:30Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000303,true
+2026-09-30T07:40:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,2,,,,,,,,,,,,,LAB-000304,true
+2026-09-30T07:40:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,2,,,,,,,,,,,,,LAB-000305,true
+2026-09-30T07:40:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000306,true
+2026-09-30T07:45:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{104ccc08-6401-4851-80ad-c6618587f9bf},2121,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000307,true
+2026-09-30T07:45:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{97b2be9b-c1c9-4099-8f7f-cbcf8f291644},2109,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000308,true
+2026-09-30T07:45:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{f59c1e1a-e9b6-4f74-8334-c45fe0b7bc05},2115,C:\Windows\explorer.exe,explorer.exe,C:\Windows\System32\userinit.exe,,,,,LAB-000309,true
+2026-09-30T08:30:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{ae241960-a83d-4006-8190-50f17264d32d},2122,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000310,true
+2026-09-30T08:30:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{d08df5b8-fe7a-48de-8bb8-64c94281cb7b},2110,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000311,true
+2026-09-30T08:30:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{6866186b-2ec6-4942-89bd-3cf084c799b5},2116,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,msedge.exe,C:\Windows\explorer.exe,,,,,LAB-000312,true
+2026-09-30T08:31:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{ae241960-a83d-4006-8190-50f17264d32d},2122,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000313,true
+2026-09-30T08:31:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{d08df5b8-fe7a-48de-8bb8-64c94281cb7b},2110,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000314,true
+2026-09-30T08:31:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{6866186b-2ec6-4942-89bd-3cf084c799b5},2116,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000315,true
+2026-09-30T08:32:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{ae241960-a83d-4006-8190-50f17264d32d},2122,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000316,true
+2026-09-30T08:32:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{d08df5b8-fe7a-48de-8bb8-64c94281cb7b},2110,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000317,true
+2026-09-30T08:32:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{6866186b-2ec6-4942-89bd-3cf084c799b5},2116,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.20,443,tcp,true,LAB-000318,true
+2026-09-30T08:33:00Z,Sysmon,3,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,10.0.0.21,,,{ae241960-a83d-4006-8190-50f17264d32d},2122,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000319,true
+2026-09-30T08:33:00Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{d08df5b8-fe7a-48de-8bb8-64c94281cb7b},2110,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000320,true
+2026-09-30T08:33:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{6866186b-2ec6-4942-89bd-3cf084c799b5},2116,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,198.51.100.10,443,tcp,true,LAB-000321,true
+2026-09-30T08:40:00Z,Sysmon,3,WIN11-02,WIN11-02\sam,,,,,10.0.0.12,,,{6866186b-2ec6-4942-89bd-3cf084c799b5},2116,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe,,,203.0.113.25,443,tcp,true,LAB-000322,true
+2026-09-30T09:00:00Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000323,true
+2026-09-30T09:00:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000324,true
+2026-09-30T09:01:00Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000325,true
+2026-09-30T09:01:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000326,true
+2026-09-30T09:02:00Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000327,true
+2026-09-30T09:02:30Z,WindowsSecurity,4625,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,0xC000006D,0xC000006A,,,,,,,,,,LAB-000328,true
+2026-09-30T09:03:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.50,,,,,,,,,,,,LAB-000329,true
+2026-09-30T09:05:00Z,WindowsSecurity,4720,WIN11-01,,svc_support,WIN11-01,alex,,,,,,,,,,,,,,LAB-000330,true
+2026-09-30T09:06:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{941d536b-e7d8-456f-855a-bd1a9dc85a02},2126,C:\Windows\System32\cmd.exe,cmd.exe,C:\Windows\explorer.exe,,,,,LAB-000331,true
+2026-09-30T09:07:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{eccf0b92-ebce-4743-8f1f-e8f955b92b3e},2127,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,powershell.exe -NoProfile -EncodedCommand VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAnAEsAUQBMAC0ATABhAGIALQBEAGUAbQBvACcA,C:\Windows\System32\cmd.exe,,,,,LAB-000332,true
+2026-09-30T09:10:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{0b4c2e5d-c011-4d28-8e5b-a44c790ae8c4},2123,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000333,true
+2026-09-30T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{b32cb98e-198d-4eeb-8fe6-49d02766a1f2},2111,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000334,true
+2026-09-30T09:10:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{b8d52208-b0ac-4027-84e5-c8bb576f5035},2128,C:\Users\alex\AppData\Local\Temp\sync-helper.exe,"""C:\Users\alex\AppData\Local\Temp\sync-helper.exe""",C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,,,,,LAB-000335,true
+2026-09-30T09:10:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{76505c9d-ed0b-4be6-8d97-a460f1ab6621},2117,C:\Windows\System32\notepad.exe,notepad.exe,C:\Windows\explorer.exe,,,,,LAB-000336,true
+2026-09-30T09:10:10Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b8d52208-b0ac-4027-84e5-c8bb576f5035},2128,C:\Users\alex\AppData\Local\Temp\sync-helper.exe,,,198.51.100.77,4444,tcp,true,LAB-000337,true
+2026-09-30T09:11:10Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b8d52208-b0ac-4027-84e5-c8bb576f5035},2128,C:\Users\alex\AppData\Local\Temp\sync-helper.exe,,,198.51.100.77,4444,tcp,true,LAB-000338,true
+2026-09-30T09:12:10Z,Sysmon,3,WIN11-01,WIN11-01\alex,,,,,10.0.0.11,,,{b8d52208-b0ac-4027-84e5-c8bb576f5035},2128,C:\Users\alex\AppData\Local\Temp\sync-helper.exe,,,198.51.100.77,4444,tcp,true,LAB-000339,true
+2026-09-30T09:50:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.30,,,{f1f9040b-b73a-405f-8652-e07ab09357cf},2120,C:\Windows\System32\svchost.exe,,,10.0.0.21,3389,tcp,false,LAB-000340,true
+2026-09-30T10:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000341,true
+2026-09-30T10:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,3,10.0.0.10,,,,,,,,,,,,LAB-000342,true
+2026-09-30T10:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,3,10.0.0.10,,,,,,,,,,,,LAB-000343,true
+2026-09-30T10:15:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{7d11652f-d0a1-4ae5-89c8-d58d9473c0ff},2124,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000344,true
+2026-09-30T10:15:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{d5d240b6-2186-424f-8f0d-5d00062935e7},2112,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000345,true
+2026-09-30T10:15:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{a4cdecbc-5cff-4f23-87a5-a936ea01faa5},2118,C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe,"powershell.exe -NoProfile -Command ""Get-Date""",C:\Windows\explorer.exe,,,,,LAB-000346,true
+2026-09-30T11:10:00Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000347,true
+2026-09-30T11:10:20Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000348,true
+2026-09-30T11:10:40Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000349,true
+2026-09-30T11:11:00Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000350,true
+2026-09-30T11:11:20Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000351,true
+2026-09-30T11:11:40Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000352,true
+2026-09-30T11:12:00Z,WindowsSecurity,4625,WIN-SRV-01,,labadmin,WIN-SRV-01,,3,10.0.0.60,0xC000006D,0xC000006A,,,,,,,,,,LAB-000353,true
+2026-09-30T12:05:00Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000354,true
+2026-09-30T12:06:00Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000355,true
+2026-09-30T12:07:00Z,WindowsSecurity,4625,WIN11-02,,sam,WIN11-02,,2,,0xC000006D,0xC000006A,,,,,,,,,,LAB-000356,true
+2026-09-30T12:08:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,2,,,,,,,,,,,,,LAB-000357,true
+2026-09-30T13:00:00Z,WindowsSecurity,4624,WIN-SRV-01,,labadmin,WIN-SRV-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000358,true
+2026-09-30T13:00:00Z,WindowsSecurity,4624,WIN11-01,,alex,WIN11-01,,10,10.0.0.30,,,,,,,,,,,,LAB-000359,true
+2026-09-30T13:00:00Z,WindowsSecurity,4624,WIN11-02,,sam,WIN11-02,,10,10.0.0.30,,,,,,,,,,,,LAB-000360,true
+2026-09-30T14:00:00Z,Sysmon,1,WIN-SRV-01,WIN-SRV-01\labadmin,,,,,,,,{a7ca1606-0050-44ba-8202-01e8f15b20c3},2125,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000361,true
+2026-09-30T14:00:00Z,Sysmon,1,WIN11-01,WIN11-01\alex,,,,,,,,{eee2b10f-d7bd-4006-8675-214cd896eb21},2113,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000362,true
+2026-09-30T14:00:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{6bfe843e-b33e-494e-8d67-28d18339649f},2119,C:\Windows\System32\cmd.exe,cmd.exe /c ver,C:\Windows\explorer.exe,,,,,LAB-000363,true
+2026-09-30T14:05:00Z,Sysmon,1,WIN11-02,WIN11-02\sam,,,,,,,,{3862e6a1-bd4c-4fec-8aae-adc26d2985e9},2130,C:\Windows\System32\whoami.exe,whoami.exe /all,C:\Windows\System32\cmd.exe,,,,,LAB-000364,true
+2026-09-30T15:01:00Z,Sysmon,3,WIN-SRV-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.21,,,{f1f9040b-b73a-405f-8652-e07ab09357cf},2120,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000365,true
+2026-09-30T15:01:00Z,Sysmon,3,WIN11-01,NT AUTHORITY\SYSTEM,,,,,10.0.0.11,,,{520950be-4755-48e2-86c0-70ab5195dfed},2108,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000366,true
+2026-09-30T15:01:00Z,Sysmon,3,WIN11-02,NT AUTHORITY\SYSTEM,,,,,10.0.0.12,,,{4dc1b6df-2caf-4c67-80e7-271844fccbea},2114,C:\Windows\System32\svchost.exe,,,203.0.113.10,443,tcp,true,LAB-000367,true

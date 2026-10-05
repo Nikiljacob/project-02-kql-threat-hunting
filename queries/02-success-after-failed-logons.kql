@@ -1,0 +1,52 @@
+// Investigation 02: Successful logon after repeated failures.
+// Dataset: synthetic Windows Security-style events in SecurityLabEvents.
+// EventID is a string. All event timestamps are UTC.
+// Select and run one complete query block at a time.
+// For block B, include both let statements and the final query together.
+// The results are investigation leads; they do not establish account compromise.
+
+// A. Investigation pivot: alex's failed and successful logon timeline.
+// These account, host, source IP and timestamps are specific to this lab finding.
+// Validated in ADX on 2026-10-05: seven events, six failures then one success.
+SecurityLabEvents
+| where EventSource == "WindowsSecurity"
+| where EventID in ("4625", "4624")
+| where Computer == "WIN11-01"
+| where TargetDomainName == "WIN11-01"
+| where TargetUserName == "alex"
+| where SourceIp == "10.0.0.50"
+| where TimeGenerated >= datetime(2026-09-30T09:00:00Z)
+    and TimeGenerated < datetime(2026-09-30T09:10:00Z)
+| project TimeGenerated, EventID, Computer, TargetUserName,
+          SourceIp, LogonType, Status, SubStatus
+| order by TimeGenerated asc
+
+// B. Detection: at least five matching failures in the ten minutes BEFORE a success.
+// Match computer, target domain, account, source IP and logon type.
+// Keep each success distinct using its LabEventId.
+// This scans the imported dataset and uses a rolling window before each success.
+// No blank lines inside this block: run all statements together.
+// Validated in ADX on 2026-10-05: one row, alex with six failures.
+let Failures = SecurityLabEvents
+| where EventSource == "WindowsSecurity" and EventID == "4625"
+| project Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,
+          FailureTime = TimeGenerated;
+let Successes = SecurityLabEvents
+| where EventSource == "WindowsSecurity" and EventID == "4624"
+| project Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,
+          SuccessTime = TimeGenerated, SuccessEventId = LabEventId;
+Successes
+| join kind=inner (Failures)
+    on Computer, TargetDomainName, TargetUserName, SourceIp, LogonType
+| where FailureTime >= SuccessTime - 10m
+    and FailureTime < SuccessTime
+| summarize
+    FailedLogons = count(),
+    FirstFailure = min(FailureTime),
+    LastFailure = max(FailureTime)
+    by Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,
+       SuccessTime, SuccessEventId
+| where FailedLogons >= 5
+| project Computer, TargetUserName, SourceIp, LogonType,
+          FailedLogons, FirstFailure, LastFailure, SuccessTime
+| order by SuccessTime asc

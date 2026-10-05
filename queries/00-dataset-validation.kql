@@ -1,0 +1,28 @@
+// Reproduction diagnostics: select and run one complete block at a time.
+// Block A matches the dataset overview validated in ADX.
+// B-E are additional read-only diagnostics with expected values from the CSV.
+
+// A. Expected: 367 events, 2026-09-24 07:00:00 to 2026-09-30 15:01:00 UTC.
+SecurityLabEvents
+| summarize TotalEvents = count(), FirstEvent = min(TimeGenerated), LastEvent = max(TimeGenerated)
+
+// B. Expected counts: WindowsSecurity 4624=65, 4625=37, 4720=3;
+// Sysmon 1=131 and 3=131.
+SecurityLabEvents
+| summarize Events = count() by EventSource, EventID
+| order by EventSource asc, EventID asc
+
+// C. Expected: no rows. A repeated source ID suggests duplicate ingestion.
+SecurityLabEvents
+| summarize Copies = count() by LabEventId
+| where Copies != 1
+
+// D. Expected: one row, IsSynthetic=true, Events=367.
+SecurityLabEvents
+| summarize Events = count() by IsSynthetic
+
+// E. Inspect column names and types before running hunts.
+// EventID and LogonType should be string, ProcessGuid guid,
+// TimeGenerated datetime, Initiated/IsSynthetic bool, DestinationPort numeric.
+SecurityLabEvents
+| getschema

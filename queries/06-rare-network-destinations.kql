@@ -1,0 +1,63 @@
+// Investigation 06: Rare outbound IPv4 destinations and process correlation.
+// Dataset: synthetic Sysmon-style events in SecurityLabEvents.
+// EventID is a string; Initiated is boolean; DestinationPort is numeric.
+// Event timestamps are UTC.
+// "Rare" means <= 3 recorded connections per destination IP + port + protocol
+// across this imported dataset. It is a lab threshold, not a maliciousness test.
+// ipv4_is_private() checks RFC1918 ranges, not every special/reserved IP range.
+// The example destination IPs are reserved documentation addresses, not real IOCs.
+// Queries validated in ADX on 2026-10-05: A = 2 rows, B = 4 rows, C = 3 rows.
+// Run A, B and C separately. Select each complete let + query block for B or C.
+
+// A. Identify rare destination combinations outside private RFC1918 ranges.
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "3"
+| where Initiated == true
+| where ipv4_is_private(DestinationIp) == false
+| summarize
+    Connections = count(),
+    FirstSeen = min(TimeGenerated),
+    LastSeen = max(TimeGenerated)
+    by DestinationIp, DestinationPort, Protocol
+| where Connections <= 3
+| order by Connections asc, FirstSeen asc
+
+// B. Recover the individual network events for those destination combinations.
+let RareDestinations = SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "3"
+| where Initiated == true
+| where ipv4_is_private(DestinationIp) == false
+| summarize Connections = count()
+    by DestinationIp, DestinationPort, Protocol
+| where Connections <= 3;
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "3"
+| where Initiated == true
+| where ipv4_is_private(DestinationIp) == false
+| join kind=inner (RareDestinations)
+    on DestinationIp, DestinationPort, Protocol
+| project TimeGenerated, Computer, User, Image,
+          DestinationIp, DestinationPort, Protocol, ProcessGuid
+| order by TimeGenerated asc
+
+// C. Pivot to the higher-priority destination identified in A and B.
+// Match network events to a specific process start by Computer + ProcessGuid.
+// Alias the creation-side parent as ProcessParentImage to avoid a name collision
+// with the network event's empty ParentImage column.
+let ProcessStarts = SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "1"
+| project Computer, ProcessGuid,
+          ProcessStart = TimeGenerated,
+          ProcessImage = Image,
+          ProcessParentImage = ParentImage;
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "3"
+| where Initiated == true
+| where DestinationIp == "198.51.100.77"
+    and DestinationPort == 4444
+| join kind=inner (ProcessStarts) on Computer, ProcessGuid
+| where TimeGenerated >= ProcessStart
+| project ConnectionTime = TimeGenerated, ProcessStart,
+          Computer, User, ProcessImage, ProcessParentImage,
+          DestinationIp, DestinationPort, ProcessGuid
+| order by ConnectionTime asc

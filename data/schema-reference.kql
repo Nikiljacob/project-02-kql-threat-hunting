@@ -1,0 +1,29 @@
+// Optional management command for a NEW reproduction table in ThreatHuntingLab.
+// This creates an empty table; import the CSV separately with first-row headers.
+// The reference standardizes numeric columns as long.
+// An existing table is not changed by .create table; use getschema to inspect it.
+.create table SecurityLabEvents (
+    TimeGenerated:datetime,
+    EventSource:string,
+    EventID:string,
+    Computer:string,
+    User:string,
+    TargetUserName:string,
+    TargetDomainName:string,
+    SubjectUserName:string,
+    LogonType:string,
+    SourceIp:string,
+    Status:string,
+    SubStatus:string,
+    ProcessGuid:guid,
+    ProcessId:long,
+    Image:string,
+    CommandLine:string,
+    ParentImage:string,
+    DestinationIp:string,
+    DestinationPort:long,
+    Protocol:string,
+    Initiated:bool,
+    LabEventId:string,
+    IsSynthetic:bool
+)

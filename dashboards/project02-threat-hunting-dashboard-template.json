@@ -1,0 +1,246 @@
+{
+  "$schema": "https://dataexplorer.azure.com/static/d/schema/84/dashboard.json",
+  "id": "d6d4aa10-1cfe-4729-85fa-304c5b5e8c5c",
+  "eTag": "967b3715-d533-4d75-92cf-1296794cfe19",
+  "title": "Project02 - KQL Threat Hunting Lab (Synthetic)",
+  "schema_version": 84,
+  "tiles": [
+    {
+      "id": "51cd0a4b-c766-463d-b4d3-cb9dc828f468",
+      "title": "Dataset overview (synthetic; timestamps UTC)",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 0,
+        "y": 0,
+        "width": 24,
+        "height": 3
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "ca78a446-40c8-4197-9b59-e34c95bb7326"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "63a45361-67bf-4a73-b76e-3ec30457fd0d",
+      "title": "01 - Repeated failed logons (5+ in 10 min)",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 0,
+        "y": 3,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "42a59957-918a-4815-8287-4f2e6271212b"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "a6d3c1f8-3037-418e-87a6-9bd98cee052a",
+      "title": "02 - Success after repeated failures",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 12,
+        "y": 3,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "526391bd-3225-431d-bec0-f0f351ca677a"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "b1b63802-0fbf-491b-898f-e62e5970fc28",
+      "title": "03 - Local account creation",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 0,
+        "y": 7,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "33580c84-d2cb-49de-b175-983d9d93f286"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "23d2e3b3-7113-49a3-b76e-87a17568469c",
+      "title": "04 - Encoded PowerShell use",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 12,
+        "y": 7,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "b543cf63-93d3-4089-b33f-61375cd60369"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "ec273d57-905b-4010-a378-e066bcbb995b",
+      "title": "05 - Rare process paths (1 observation)",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 0,
+        "y": 11,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "bf290bf4-6ddc-46b0-9226-0a33fc0c891c"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    },
+    {
+      "id": "ada3d7fb-9463-47ab-b5e4-0028ec4ec967",
+      "title": "06 - Rare outbound destinations (3 or fewer)",
+      "visualType": "table",
+      "pageId": "329020af-e2fa-48e7-968c-b2b1acbbb6af",
+      "layout": {
+        "x": 12,
+        "y": 11,
+        "width": 12,
+        "height": 4
+      },
+      "queryRef": {
+        "kind": "query",
+        "queryId": "775eb6eb-e583-45af-9959-682e09fa2ec7"
+      },
+      "visualOptions": {
+        "selectedDataOnLoad": {
+          "all": true,
+          "limit": 10
+        }
+      }
+    }
+  ],
+  "baseQueries": [],
+  "parameters": [],
+  "dataSources": [
+    {
+      "id": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc",
+      "kind": "manual-kusto",
+      "name": "ThreatHuntingLab",
+      "clusterUri": "https://your-cluster.region.kusto.windows.net/",
+      "database": "ThreatHuntingLab"
+    }
+  ],
+  "pages": [
+    {
+      "name": "Hunt overview",
+      "id": "329020af-e2fa-48e7-968c-b2b1acbbb6af"
+    }
+  ],
+  "queries": [
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| summarize\n    TotalEvents = count(),\n    FirstEvent = min(TimeGenerated),\n    LastEvent = max(TimeGenerated)",
+      "id": "ca78a446-40c8-4197-9b59-e34c95bb7326",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| where EventSource == \"WindowsSecurity\"\n| where EventID == \"4625\"\n| summarize\n    FailedLogons = count(),\n    FirstFailure = min(TimeGenerated),\n    LastFailure = max(TimeGenerated)\n    by Computer, TargetDomainName, TargetUserName, SourceIp,\n       WindowStart = bin(TimeGenerated, 10m)\n| where FailedLogons >= 5\n| order by FailedLogons desc\n| project Computer, TargetUserName, SourceIp, FailedLogons, WindowStart",
+      "id": "42a59957-918a-4815-8287-4f2e6271212b",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "let Failures = SecurityLabEvents\n| where EventSource == \"WindowsSecurity\" and EventID == \"4625\"\n| project Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,\n          FailureTime = TimeGenerated;\nlet Successes = SecurityLabEvents\n| where EventSource == \"WindowsSecurity\" and EventID == \"4624\"\n| project Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,\n          SuccessTime = TimeGenerated, SuccessEventId = LabEventId;\nSuccesses\n| join kind=inner (Failures)\n    on Computer, TargetDomainName, TargetUserName, SourceIp, LogonType\n| where FailureTime >= SuccessTime - 10m\n    and FailureTime < SuccessTime\n| summarize\n    FailedLogons = count(),\n    FirstFailure = min(FailureTime),\n    LastFailure = max(FailureTime)\n    by Computer, TargetDomainName, TargetUserName, SourceIp, LogonType,\n       SuccessTime, SuccessEventId\n| where FailedLogons >= 5\n| project Computer, TargetUserName, SourceIp, LogonType,\n          FailedLogons, FirstFailure, LastFailure, SuccessTime\n| order by SuccessTime asc\n| project Computer, TargetUserName, SourceIp, LogonType, FailedLogons, SuccessTime",
+      "id": "526391bd-3225-431d-bec0-f0f351ca677a",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| where EventSource == \"WindowsSecurity\"\n| where EventID == \"4720\"\n| where TargetDomainName =~ Computer\n| project TimeGenerated, Computer,\n          CreatedBy = SubjectUserName,\n          NewAccount = TargetUserName,\n          TargetDomainName\n| order by TimeGenerated asc\n| project TimeGenerated, Computer, CreatedBy, NewAccount",
+      "id": "33580c84-d2cb-49de-b175-983d9d93f286",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| where EventSource == \"Sysmon\" and EventID == \"1\"\n| where Image endswith @\"\\powershell.exe\"\n| where CommandLine matches regex @\"(?i)(^|\\s)-(encodedcommand|enc)\\s\"\n| project TimeGenerated, Computer, User, ParentImage, CommandLine\n| order by TimeGenerated asc",
+      "id": "b543cf63-93d3-4089-b33f-61375cd60369",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| where EventSource == \"Sysmon\" and EventID == \"1\"\n| summarize\n    Executions = count(),\n    FirstSeen = min(TimeGenerated),\n    LastSeen = max(TimeGenerated)\n    by Computer, Image\n| where Executions == 1\n| order by FirstSeen asc\n| project Computer, Image, Executions, FirstSeen",
+      "id": "bf290bf4-6ddc-46b0-9226-0a33fc0c891c",
+      "usedVariables": []
+    },
+    {
+      "dataSource": {
+        "kind": "inline",
+        "dataSourceId": "bc68f90e-0a09-45cf-99f5-ac8a835a48bc"
+      },
+      "text": "SecurityLabEvents\n| where EventSource == \"Sysmon\" and EventID == \"3\"\n| where Initiated == true\n| where ipv4_is_private(DestinationIp) == false\n| summarize\n    Connections = count(),\n    FirstSeen = min(TimeGenerated),\n    LastSeen = max(TimeGenerated)\n    by DestinationIp, DestinationPort, Protocol\n| where Connections <= 3\n| order by Connections asc, FirstSeen asc",
+      "id": "775eb6eb-e583-45af-9959-682e09fa2ec7",
+      "usedVariables": []
+    }
+  ],
+  "embeddedApps": []
+}

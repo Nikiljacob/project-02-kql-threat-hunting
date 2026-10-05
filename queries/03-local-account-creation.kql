@@ -1,0 +1,32 @@
+// Investigation 03: Local account creation.
+// Dataset: synthetic Windows Security-style events in SecurityLabEvents.
+// EventID is a string. All timestamps are UTC.
+// Select and run one query block at a time.
+// Computer contains the short host name in this normalized lab dataset.
+// Local scope is inferred by comparing TargetDomainName with Computer.
+// Account creation is a review lead; it does not establish malicious persistence.
+
+// A. Overview: all account creation events, including local and domain accounts.
+// SubjectUserName is the account requesting creation; TargetUserName is the new account.
+// Validated in ADX on 2026-10-05: three events.
+SecurityLabEvents
+| where EventSource == "WindowsSecurity"
+| where EventID == "4720"
+| project TimeGenerated, Computer, SubjectUserName,
+          TargetUserName, TargetDomainName
+| order by TimeGenerated asc
+
+// B. Detection: local account creation in this dataset.
+// =~ compares the two names without case differences.
+// Output aliases make the creator and new account easier to distinguish.
+// For other datasets, normalize computer/domain naming before using this comparison.
+// Validated in ADX on 2026-10-05: two events (testuser and svc_support).
+SecurityLabEvents
+| where EventSource == "WindowsSecurity"
+| where EventID == "4720"
+| where TargetDomainName =~ Computer
+| project TimeGenerated, Computer,
+          CreatedBy = SubjectUserName,
+          NewAccount = TargetUserName,
+          TargetDomainName
+| order by TimeGenerated asc

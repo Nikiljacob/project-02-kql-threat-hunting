@@ -1,0 +1,14 @@
+// Investigation 04: Encoded PowerShell command lines.
+// Dataset: synthetic Sysmon-style events in SecurityLabEvents.
+// EventID is a string. Event timestamps are UTC.
+// This rule finds powershell.exe with -EncodedCommand or -enc, ignoring case.
+// The regex requires whitespace before/after the parameter as appropriate.
+// Coverage is limited to these two parameter forms and this executable name.
+// Encoded-command use is a triage lead; inspect decoded contents and context.
+// Validated in ADX on 2026-10-05: two events.
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "1"
+| where Image endswith @"\powershell.exe"
+| where CommandLine matches regex @"(?i)(^|\s)-(encodedcommand|enc)\s"
+| project TimeGenerated, Computer, User, ParentImage, CommandLine
+| order by TimeGenerated asc

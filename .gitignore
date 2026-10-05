@@ -1,0 +1,6 @@
+# Keep the previously tested personal data source export local.
+dashboards/project02-threat-hunting-dashboard.json
+__pycache__/
+*.pyc
+Thumbs.db
+Desktop.ini

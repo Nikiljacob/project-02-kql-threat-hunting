@@ -1,0 +1,30 @@
+// Investigation 05: Rare process paths and their execution context.
+// Dataset: synthetic Sysmon-style events in SecurityLabEvents.
+// EventID is a string. Event timestamps are UTC.
+// "Rare" means observed once per Computer + Image across this imported dataset.
+// This is a triage heuristic; one observation does not establish maliciousness.
+// Both queries validated in ADX on 2026-10-05: two rows each.
+// Run A and B separately. For B, select the complete let + query block.
+
+// A. Find executable paths observed once on a particular computer.
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "1"
+| summarize
+    Executions = count(),
+    FirstSeen = min(TimeGenerated),
+    LastSeen = max(TimeGenerated)
+    by Computer, Image
+| where Executions == 1
+| order by FirstSeen asc
+
+// B. Recover the original process details for every rare computer/path pair.
+let RareProcesses = SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "1"
+| summarize Executions = count() by Computer, Image
+| where Executions == 1;
+SecurityLabEvents
+| where EventSource == "Sysmon" and EventID == "1"
+| join kind=inner (RareProcesses) on Computer, Image
+| project TimeGenerated, Computer, Image, User,
+          ParentImage, CommandLine, ProcessGuid
+| order by TimeGenerated asc

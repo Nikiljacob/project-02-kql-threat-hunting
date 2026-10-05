@@ -1,0 +1,36 @@
+// Investigation 01: Multiple failed Windows logons
+// Platform: Azure Data Explorer free cluster
+// Database: ThreatHuntingLab | Table: SecurityLabEvents
+// Dataset: synthetic Windows Security / Sysmon-style events, 24-30 September 2026.
+// EventID is a string in this imported table.
+// Run one query block at a time by selecting that block in the editor.
+// Hypothesis: possible password guessing (MITRE ATT&CK T1110.001).
+// These query results are investigation leads; they do not establish compromise.
+
+// A. Detection: five or more failures per host, account and source IP
+// in the same fixed 10-minute UTC bin.
+// Validated in ADX on 2026-10-04: two groups (7 and 6 failures).
+SecurityLabEvents
+| where EventSource == "WindowsSecurity"
+| where EventID == "4625"
+| summarize
+    FailedLogons = count(),
+    FirstFailure = min(TimeGenerated),
+    LastFailure = max(TimeGenerated)
+    by Computer, TargetDomainName, TargetUserName, SourceIp,
+       WindowStart = bin(TimeGenerated, 10m)
+| where FailedLogons >= 5
+| order by FailedLogons desc
+
+// B. Investigation pivot: inspect individual failures from the two flagged IPs.
+// These IPs and timestamps are specific to this lab's findings.
+// Validated in ADX on 2026-10-04: 13 events (6 alex, 7 labadmin).
+SecurityLabEvents
+| where EventSource == "WindowsSecurity"
+| where EventID == "4625"
+| where TimeGenerated >= datetime(2026-09-30T09:00:00Z)
+    and TimeGenerated < datetime(2026-09-30T11:20:00Z)
+| where SourceIp in ("10.0.0.50", "10.0.0.60")
+| project TimeGenerated, Computer, TargetUserName,
+          SourceIp, LogonType, Status, SubStatus
+| order by TimeGenerated asc
